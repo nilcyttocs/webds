@@ -117,7 +117,7 @@ fi
 if [ ${debonly} = false ]; then
     if [ ${update} = true ]; then
         if [ ${module} != "none" ]; then
-            git submodule update --remote extensions/${module}
+            git submodule update --remote "extensions/${module}"
         else
             git -c submodule."deb_packages/jupyterlab".update=none -c submodule."deb_packages/webds".update=none submodule update --remote
         fi

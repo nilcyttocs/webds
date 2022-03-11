@@ -1,0 +1,56 @@
+[submodule "deb_packages/jupyterlab"]
+	path = deb_packages/jupyterlab
+	url = https://github.com/nilcyttocs/jupyterlab_deb.git
+	branch = main
+[submodule "deb_packages/webds"]
+	path = deb_packages/webds
+	url = https://github.com/nilcyttocs/webds_deb.git
+	branch = main
+[submodule "extensions/syna_webds"]
+	path = extensions/syna_webds
+	url = https://github.com/qmao/syna_webds.git
+	branch = main
+[submodule "extensions/webds_device_info"]
+	path = extensions/webds_device_info
+	url = https://github.com/tomc4798/webds_device_info.git
+	branch = main
+[submodule "extensions/webds_doc_launcher"]
+	path = extensions/webds_doc_launcher
+	url = https://github.com/nilcyttocs/webds_doc_launcher.git
+	branch = main
+[submodule "extensions/webds_documentation"]
+	path = extensions/webds_documentation
+	url = https://github.com/nilcyttocs/webds_documentation.git
+	branch = main
+[submodule "extensions/webds_heatmap"]
+	path = extensions/webds_heatmap
+	url = https://github.com/nilcyttocs/webds_heatmap.git
+	branch = main
+[submodule "extensions/webds_launcher"]
+	path = extensions/webds_launcher
+	url = https://github.com/nilcyttocs/webds_launcher.git
+	branch = main
+[submodule "extensions/webds_readme"]
+	path = extensions/webds_readme
+	url = https://github.com/nilcyttocs/webds_readme.git
+	branch = main
+[submodule "extensions/webds_service"]
+	path = extensions/webds_service
+	url = https://github.com/nilcyttocs/webds_service.git
+	branch = main
+[submodule "extensions/webds_software_update"]
+	path = extensions/webds_software_update
+	url = https://github.com/nilcyttocs/webds_software_update.git
+	branch = main
+[submodule "extensions/webds_status"]
+	path = extensions/webds_status
+	url = https://github.com/nilcyttocs/webds_status.git
+	branch = main
+[submodule "extensions/webds_touch"]
+	path = extensions/webds_touch
+	url = https://github.com/nilcyttocs/webds_touch.git
+	branch = main
+[submodule "extensions/webds_utils"]
+	path = extensions/webds_utils
+	url = https://github.com/nilcyttocs/webds_utils.git
+	branch = main

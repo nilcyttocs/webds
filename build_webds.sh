@@ -14,18 +14,18 @@ ext_dir=${dir}/extensions
 deb_dir=${dir}/deb_packages/webds
 
 declare -a exts=("webds_service"
+                "webds_api"
+                "webds_connection"
                 "webds_device_info"
                 "webds_doc_launcher"
                 "webds_documentation"
                 "webds_heatmap"
                 "webds_launcher"
                 "webds_readme"
+                "webds_reprogram"
                 "webds_software_update"
                 "webds_status"
                 "webds_touch"
-                "syna_webds/connection-settings"
-                "syna_webds/reprogram"
-                "syna_webds/server-extension" 
                 )
 
 pushd () {

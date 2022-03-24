@@ -4,6 +4,7 @@ set -e
 
 debonly=false
 extonly=false
+link=false
 module=none
 update=true
 source=false
@@ -42,8 +43,9 @@ Help() {
    echo
    echo "Options:"
    echo "-d     Build Debian package only"
-   echo "-e     Build extensions only"
+   echo "-e     Build extension modules only"
    echo "-h     Print help information"
+   echo "-l     Link extension modules to JupyterLab"
    echo "-m     Build specified extension module"
    echo "-n     No updating submodules for build"
    echo "-s     Include source distribution build"
@@ -69,6 +71,9 @@ Build_ext() {
         python3 -m build --wheel
     fi
     cp dist/*.whl ${deb_dir}/wheelhouse/.
+    if [ ${link} = true ]; then
+        jupyter labextension develop . --overwrite
+    fi
     popd
 }
 
@@ -87,15 +92,17 @@ Build_deb() {
     popd
 }
 
-while getopts ":dehm:nsv:" option; do
+while getopts ":dehlm:nsv:" option; do
    case ${option} in
       d) # build Debian package only
          debonly=true;;
-      e) # build extensions only
+      e) # build extension modules only
          extonly=true;;
       h) # print help information
          Help
          exit;;
+      l) # link extension modules to JupyterLab
+         link=true;;
       m) # build specified extension module
          module=${OPTARG};;
       n) # no updating submodules for build

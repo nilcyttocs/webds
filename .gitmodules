@@ -58,7 +58,3 @@
 	path = extensions/webds_touch
 	url = https://github.com/nilcyttocs/webds_touch.git
 	branch = main
-[submodule "extensions/webds_utils"]
-	path = extensions/webds_utils
-	url = https://github.com/nilcyttocs/webds_utils.git
-	branch = main

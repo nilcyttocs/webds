@@ -34,6 +34,10 @@
 	path = extensions/webds_launcher
 	url = https://github.com/nilcyttocs/webds_launcher.git
 	branch = main
+[submodule "extensions/webds_production_tests"]
+        path = extensions/webds_production_tests
+        url = https://github.com/nilcyttocs/webds_production_tests.git
+        branch = main
 [submodule "extensions/webds_readme"]
 	path = extensions/webds_readme
 	url = https://github.com/nilcyttocs/webds_readme.git

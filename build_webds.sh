@@ -20,6 +20,7 @@ declare -a exts=("webds_service"
                 "webds_device_info"
                 "webds_doc_launcher"
                 "webds_documentation"
+                "webds_gear_selection"
                 "webds_heatmap"
                 "webds_launcher"
                 "webds_production_tests"
@@ -145,8 +146,8 @@ if [ ${extonly} = false ]; then
     if [ ${update} = true ]; then
         git submodule update --remote "deb_packages/webds"
     fi
-    if [ ! -d ${deb_dir}/pinormos-webds/webds-deb/var/spool/syna/jupyterlab_webds ]; then
-        mkdir -p ${deb_dir}/pinormos-webds/webds-deb/var/spool/syna/jupyterlab_webds
+    if [ ! -d ${deb_dir}/pinormos-webds/webds-deb/var/spool/syna/webds/wheels ]; then
+        mkdir -p ${deb_dir}/pinormos-webds/webds-deb/var/spool/syna/webds/wheels
     fi
     Build_deb
 fi

@@ -27,9 +27,9 @@
 	url = https://github.com/nilcyttocs/webds_documentation.git
 	branch = main
 [submodule "extensions/webds_gear_selection"]
-        path = extensions/webds_gear_selection
-        url = https://github.com/nilcyttocs/webds_gear_selection.git
-        branch = main
+	path = extensions/webds_gear_selection
+	url = https://github.com/nilcyttocs/webds_gear_selection.git
+	branch = main
 [submodule "extensions/webds_heatmap"]
 	path = extensions/webds_heatmap
 	url = https://github.com/nilcyttocs/webds_heatmap.git

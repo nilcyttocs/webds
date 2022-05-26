@@ -14,10 +14,6 @@
         path = extensions/webds_connection
         url = https://github.com/qmao/webds_connection.git
         branch = main
-[submodule "extensions/webds_device_info"]
-	path = extensions/webds_device_info
-	url = https://github.com/tomc4798/webds_device_info.git
-	branch = main
 [submodule "extensions/webds_doc_launcher"]
 	path = extensions/webds_doc_launcher
 	url = https://github.com/nilcyttocs/webds_doc_launcher.git

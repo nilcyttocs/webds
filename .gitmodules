@@ -62,3 +62,7 @@
 	path = extensions/webds_touch
 	url = https://github.com/nilcyttocs/webds_touch.git
 	branch = main
+[submodule "extensions/webds_device_info"]
+	path = extensions/webds_device_info
+	url = https://github.com/nilcyttocs/webds_device_info.git
+	branch = main

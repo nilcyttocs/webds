@@ -10,9 +10,17 @@
         path = extensions/webds_api
         url = https://github.com/qmao/webds_api.git
         branch = main
+[submodule "extensions/webds_config_editor"]
+        path = extensions/webds_config_editor
+        url = https://github.com/nilcyttocs/webds_config_editor.git
+        branch = main
 [submodule "extensions/webds_connection"]
         path = extensions/webds_connection
         url = https://github.com/qmao/webds_connection.git
+        branch = main
+[submodule "extensions/webds_device_info"]
+        path = extensions/webds_device_info
+        url = https://github.com/nilcyttocs/webds_device_info.git
         branch = main
 [submodule "extensions/webds_doc_launcher"]
 	path = extensions/webds_doc_launcher
@@ -61,8 +69,4 @@
 [submodule "extensions/webds_touch"]
 	path = extensions/webds_touch
 	url = https://github.com/nilcyttocs/webds_touch.git
-	branch = main
-[submodule "extensions/webds_device_info"]
-	path = extensions/webds_device_info
-	url = https://github.com/nilcyttocs/webds_device_info.git
 	branch = main

@@ -16,6 +16,7 @@ deb_dir=${dir}/deb_packages/webds
 
 declare -a exts=("webds_service"
                 "webds_api"
+                "webds_config_editor"
                 "webds_connection"
                 "webds_device_info"
                 "webds_doc_launcher"

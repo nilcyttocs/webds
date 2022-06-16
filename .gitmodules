@@ -54,6 +54,10 @@
         path = extensions/webds_reprogram
         url = https://github.com/qmao/webds_reprogram.git
         branch = main
+[submodule "extensions/webds_sensor_mapping"]
+        path = extensions/webds_sensor_mapping
+        url = https://github.com/qmao/webds_sensor_mapping.git
+        branch = main
 [submodule "extensions/webds_service"]
 	path = extensions/webds_service
 	url = https://github.com/nilcyttocs/webds_service.git

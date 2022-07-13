@@ -50,6 +50,10 @@
 	path = extensions/webds_readme
 	url = https://github.com/nilcyttocs/webds_readme.git
 	branch = main
+[submodule "extensions/webds_reflash"]
+        path = extensions/webds_reflash
+        url = https://github.com/qmao/webds_reflash.git
+        branch = main
 [submodule "extensions/webds_reprogram"]
         path = extensions/webds_reprogram
         url = https://github.com/qmao/webds_reprogram.git

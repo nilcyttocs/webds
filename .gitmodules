@@ -14,6 +14,10 @@
         path = extensions/webds_config_editor
         url = https://github.com/nilcyttocs/webds_config_editor.git
         branch = main
+[submodule "extensions/webds_config_launcher"]
+        path = extensions/webds_config_launcher
+        url = https://github.com/nilcyttocs/webds_config_launcher.git
+        branch = main
 [submodule "extensions/webds_connection"]
         path = extensions/webds_connection
         url = https://github.com/qmao/webds_connection.git

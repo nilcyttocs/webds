@@ -33,7 +33,8 @@ declare -a exts=("webds_service"
                 "webds_sensor_mapping"
                 "webds_software_update"
                 "webds_status"
-                "webds_touch"
+                "webds_touch",
+                "webds_wifi_setup"
                 )
 
 pushd () {

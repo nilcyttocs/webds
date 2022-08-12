@@ -86,3 +86,7 @@
 	path = extensions/webds_touch
 	url = https://github.com/nilcyttocs/webds_touch.git
 	branch = main
+[submodule "extensions/webds_wifi_setup"]
+	path = extensions/webds_wifi_setup
+	url = https://github.com/nilcyttocs/webds_wifi_setup.git
+	branch = main

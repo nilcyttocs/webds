@@ -22,6 +22,10 @@
         path = extensions/webds_connection
         url = https://github.com/qmao/webds_connection.git
         branch = main
+[submodule "extensions/webds_data_collection"]
+        path = extensions/webds_data_collection
+        url = https://github.com/nilcyttocs/webds_data_collection.git
+        branch = main
 [submodule "extensions/webds_device_info"]
         path = extensions/webds_device_info
         url = https://github.com/nilcyttocs/webds_device_info.git

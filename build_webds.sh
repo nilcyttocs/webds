@@ -65,10 +65,20 @@ Build_ext() {
     echo ${ext}
     echo
     pushd ${ext_dir}/${ext}
+    npm_install=false
+    if [ ${update} = true ]; then
+        git fetch origin
+        if [[ $(git diff origin/main package.json) ]]; then
+            npm_install=true
+        fi
+        git merge origin/main
+    fi
     if [ ! -f tsconfig.tsbuildinfo ]; then
         pip3 install -ve .
     else
-        npm install
+        if [ ${npm_install} = true ]; then
+            npm install
+        fi
         jlpm run build
     fi
     rm -fr dist
@@ -92,6 +102,9 @@ Build_exts() {
 
 Build_deb() {
     pushd ${deb_dir}
+    if [ ${update} = true ]; then
+        git pull
+    fi
     if [ ${version} != "none" ]; then
         sed -i "s/^Version:.*/Version: ${version}/" control
     fi
@@ -129,13 +142,6 @@ if [ ${module} != "none" ]; then
     extonly=true
 fi
 if [ ${debonly} = false ]; then
-    if [ ${update} = true ]; then
-        if [ ${module} != "none" ]; then
-            git submodule update --remote "extensions/${module}"
-        else
-            git -c submodule."deb_packages/jupyterlab".update=none -c submodule."deb_packages/webds".update=none submodule update --remote
-        fi
-    fi
     if [ ! -d ${deb_dir}/wheelhouse ]; then
         mkdir -p ${deb_dir}/wheelhouse
     else
@@ -148,9 +154,6 @@ if [ ${debonly} = false ]; then
     fi
 fi
 if [ ${extonly} = false ]; then
-    if [ ${update} = true ]; then
-        git submodule update --remote "deb_packages/webds"
-    fi
     if [ ! -d ${deb_dir}/pinormos-webds/webds-deb/var/spool/syna/webds/wheels ]; then
         mkdir -p ${deb_dir}/pinormos-webds/webds-deb/var/spool/syna/webds/wheels
     fi

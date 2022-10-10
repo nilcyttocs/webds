@@ -26,6 +26,7 @@ Help() {
 
 Build_deb() {
     pushd ${deb_dir}
+    git pull
     if [ ${version} != "none" ]; then
         sed -i "s/^Version:.*/Version: ${version}/" control
     fi
@@ -47,11 +48,6 @@ while getopts ":hv:" option; do
 done
 
 start=`date +%s`
-if [ ! -d ${deb_dir}/pinormos-jupyterlab ]; then
-    git submodule update --init "deb_packages/jupyterlab"
-else
-    git submodule update --remote "deb_packages/jupyterlab"
-fi
 if [ ! -d ${deb_dir}/pinormos-jupyterlab/jupyterlab-deb/var/spool/syna/jupyterlab_wheels ]; then
     mkdir -p ${deb_dir}/pinormos-jupyterlab/jupyterlab-deb/var/spool/syna/jupyterlab_wheels
 fi

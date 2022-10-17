@@ -10,6 +10,10 @@
         path = extensions/webds_api
         url = https://github.com/qmao/webds_api.git
         branch = main
+[submodule "extensions/webds_component_lib"]
+        path = extensions/webds_component_lib
+        url = https://github.com/nilcyttocs/webds_component_lib.git
+        branch = main
 [submodule "extensions/webds_config_editor"]
         path = extensions/webds_config_editor
         url = https://github.com/nilcyttocs/webds_config_editor.git

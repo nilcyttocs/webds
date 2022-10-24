@@ -54,6 +54,10 @@
 	path = extensions/webds_heatmap
 	url = https://github.com/nilcyttocs/webds_heatmap.git
 	branch = main
+[submodule "extensions/webds_integration_duration"]
+        path = extensions/webds_integration_duration
+        url = https://github.com/nilcyttocs/webds_integration_duration.git
+        branch = main
 [submodule "extensions/webds_launcher"]
 	path = extensions/webds_launcher
 	url = https://github.com/nilcyttocs/webds_launcher.git

@@ -85,9 +85,9 @@ Build_ext() {
     fi
     rm -fr dist
     if [ ${source} = true ]; then
-        python3 -m build
+        python3.7 -m build
     else
-        python3 -m build --wheel
+        python3.7 -m build --wheel
     fi
     cp dist/*.whl ${deb_dir}/wheelhouse/.
     if [ ${link} = true ]; then

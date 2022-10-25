@@ -36,6 +36,7 @@ declare -a exts=("webds_service"
                 "webds_software_update"
                 "webds_status"
                 "webds_touch"
+                "webds_tutor_initial_setup"
                 )
 
 pushd () {

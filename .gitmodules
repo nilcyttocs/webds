@@ -94,6 +94,10 @@
 	path = extensions/webds_status
 	url = https://github.com/nilcyttocs/webds_status.git
 	branch = main
+[submodule "extensions/webds_test_viewer"]
+        path = extensions/webds_test_viewer
+        url = https://github.com/nilcyttocs/webds_test_viewer.git
+        branch = main
 [submodule "extensions/webds_touch"]
 	path = extensions/webds_touch
 	url = https://github.com/nilcyttocs/webds_touch.git

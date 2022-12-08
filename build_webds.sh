@@ -35,6 +35,7 @@ declare -a exts=("webds_service"
                 "webds_sensor_mapping"
                 "webds_software_update"
                 "webds_status"
+                "webds_test_viewer"
                 "webds_touch"
                 "webds_tutor_initial_setup"
                 )

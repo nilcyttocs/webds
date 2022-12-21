@@ -72,18 +72,18 @@ Build_ext() {
     npm_install=false
     if [ ${update} = true ]; then
         git fetch origin
-        if [[ $(git diff origin/main package.json) ]]; then
+        if [ ${ext} = "webds_service" ] && [[ $(git diff origin/main package.json) ]]; then
             npm_install=true
         fi
         git merge origin/main
     fi
     if [ ! -f tsconfig.tsbuildinfo ]; then
-        pip3 install -ve .
+        sudo pip3 install -ve .
     else
         if [ ${npm_install} = true ]; then
             npm install
         fi
-        jlpm run build
+        sudo jlpm run build
     fi
     rm -fr dist
     if [ ${source} = true ]; then
@@ -93,7 +93,7 @@ Build_ext() {
     fi
     cp dist/*.whl ${deb_dir}/wheelhouse/.
     if [ ${link} = true ]; then
-        jupyter labextension develop . --overwrite
+        sudo jupyter labextension develop . --overwrite
     fi
     popd
     if [ ${ext} = "webds_service" ]; then

@@ -103,7 +103,7 @@ Build_ext() {
     if [ ${ext} = "webds_service" ]; then
         pushd ${ext_dir}
         mkdir -p node_modules/@webds
-        ln -sf ../../webds_service/node_modules/@webds/service
+        ln -sf ../../webds_service/ node_modules/@webds/service
         popd
     fi
 }

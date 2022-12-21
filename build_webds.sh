@@ -86,11 +86,13 @@ Build_ext() {
         sudo jlpm run build
     fi
     rm -fr dist
+    sed -i -e 's/antigravity/jupyter-packaging==0.10.4/g' ./pyproject.toml
     if [ ${source} = true ]; then
         python3 -m build
     else
         python3 -m build --wheel
     fi
+    git checkout ./pyproject.toml
     cp dist/*.whl ${deb_dir}/wheelhouse/.
     if [ ${link} = true ]; then
         sudo jupyter labextension develop . --overwrite

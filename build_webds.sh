@@ -96,6 +96,12 @@ Build_ext() {
         jupyter labextension develop . --overwrite
     fi
     popd
+    if [ ${ext} = "webds_service" ]; then
+        pushd ${ext_dir}
+        mkdir -p node_modules/@webds
+        ln -sf ../../webds_service/node_modules/@webds/service
+        popd
+    fi
 }
 
 Build_exts() {
@@ -146,6 +152,9 @@ if [ ${module} != "none" ]; then
     extonly=true
 fi
 if [ ${debonly} = false ]; then
+    if [ ! -d ${ext_dir}/node_modules ]; then
+        mkdir -p ${ext_dir}/node_modules
+    fi
     if [ ! -d ${deb_dir}/wheelhouse ]; then
         mkdir -p ${deb_dir}/wheelhouse
     else

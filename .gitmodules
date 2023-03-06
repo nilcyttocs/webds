@@ -74,6 +74,10 @@
         path = extensions/webds_reflash
         url = https://github.com/qmao/webds_reflash.git
         branch = main
+[submodule "extensions/webds_register_map"]
+        path = extensions/webds_register_map
+        url = https://github.com/qmao/webds_register_map.git
+        branch = main
 [submodule "extensions/webds_reprogram"]
         path = extensions/webds_reprogram
         url = https://github.com/qmao/webds_reprogram.git

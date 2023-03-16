@@ -62,6 +62,10 @@
 	path = extensions/webds_launcher
 	url = https://github.com/nilcyttocs/webds_launcher.git
 	branch = main
+[submodule "extensions/webds_local_dimming"]
+        path = extensions/webds_local_dimming
+        url = https://github.com/nilcyttocs/webds_local_dimming.git
+        branch = main
 [submodule "extensions/webds_production_tests"]
         path = extensions/webds_production_tests
         url = https://github.com/nilcyttocs/webds_production_tests.git

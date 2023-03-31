@@ -38,6 +38,7 @@ declare -a exts=("webds_service"
                 "webds_status"
                 "webds_test_viewer"
                 "webds_touch"
+                "webds_trace_and_log"
                 "webds_tutor_initial_setup"
                 )
 

@@ -110,6 +110,10 @@
 	path = extensions/webds_touch
 	url = https://github.com/nilcyttocs/webds_touch.git
 	branch = main
+[submodule "extensions/webds_trace_and_log"]
+        path = extensions/webds_trace_and_log
+        url = https://github.com/nilcyttocs/webds_trace_and_log.git
+        branch = main
 [submodule "extensions/webds_tutor_initial_setup"]
 	path = extensions/webds_tutor_initial_setup
 	url = https://github.com/qmao/webds_tutor_initial_setup.git

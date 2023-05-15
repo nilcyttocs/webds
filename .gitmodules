@@ -54,6 +54,10 @@
 	path = extensions/webds_heatmap
 	url = https://github.com/nilcyttocs/webds_heatmap.git
 	branch = main
+[submodule "extensions/webds_hybrid_analog"]
+        path = extensions/webds_hybrid_analog
+        url = https://github.com/phoenixxtsai/webds_hybrid_analog.git
+        branch = main
 [submodule "extensions/webds_integration_duration"]
         path = extensions/webds_integration_duration
         url = https://github.com/nilcyttocs/webds_integration_duration.git

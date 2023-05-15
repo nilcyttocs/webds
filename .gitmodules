@@ -42,6 +42,10 @@
 	path = extensions/webds_documentation
 	url = https://github.com/nilcyttocs/webds_documentation.git
 	branch = main
+[submodule "extensions/webds_gear_selection"]
+        path = extensions/webds_gear_selection
+        url = https://github.com/jerrygira/webds_gear_selection.git
+        branch = main
 [submodule "extensions/webds_guided_config"]
         path = extensions/webds_guided_config
         url = https://github.com/nilcyttocs/webds_guided_config.git

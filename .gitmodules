@@ -74,6 +74,10 @@
         path = extensions/webds_production_tests
         url = https://github.com/nilcyttocs/webds_production_tests.git
         branch = main
+[submodule "extensions/webds_ram_backdoor"]
+        path = extensions/webds_ram_backdoor
+        url = https://github.com/qmao/webds_ram_backdoor.git
+        branch = main
 [submodule "extensions/webds_readme"]
 	path = extensions/webds_readme
 	url = https://github.com/nilcyttocs/webds_readme.git

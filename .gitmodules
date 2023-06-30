@@ -70,6 +70,10 @@
         path = extensions/webds_local_dimming
         url = https://github.com/nilcyttocs/webds_local_dimming.git
         branch = main
+[submodule "extensions/webds_pdnr"]
+        path = extensions/webds_pdnr
+        url = https://github.com/nilcyttocs/webds_pdnr.git
+        branch = main
 [submodule "extensions/webds_production_tests"]
         path = extensions/webds_production_tests
         url = https://github.com/nilcyttocs/webds_production_tests.git

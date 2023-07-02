@@ -70,6 +70,10 @@
         path = extensions/webds_local_dimming
         url = https://github.com/nilcyttocs/webds_local_dimming.git
         branch = main
+[submodule "extensions/webds_lockdown_and_custom_serialization"]
+        path = extensions/webds_lockdown_and_custom_serialization
+        url = https://github.com/qmao/webds_lockdown_and_custom_serialization.git
+        branch = main
 [submodule "extensions/webds_pdnr"]
         path = extensions/webds_pdnr
         url = https://github.com/nilcyttocs/webds_pdnr.git

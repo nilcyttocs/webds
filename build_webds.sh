@@ -93,7 +93,7 @@ Build_ext() {
         fi
         sudo jlpm run build
     fi
-    rm -fr dist
+    sudo rm -fr dist
     sed -i -e 's/antigravity/jupyter-packaging==0.10.4/g' ./pyproject.toml
     sed -i -e 's/, skip_npm_install=False//g' ./setup.py
     if [ ${source} = true ]; then
